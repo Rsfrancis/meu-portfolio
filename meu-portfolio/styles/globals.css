@@ -1,0 +1,518 @@
+/* Reset e Configurações Globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f0f2f5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Container da Landing Page */
+.landing-container {
+  width: 100%;
+}
+
+/* Navegação Fixa */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 1rem 2rem;
+}
+
+.nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: #555;
+}
+
+.nav-link:hover {
+  background-color: #6366f1;
+  color: #fff;
+}
+
+/* Seção HOME */
+.section-home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem 4rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.profile-card-landing {
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+}
+
+.profile-avatar-landing {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.profile-name-landing {
+  font-size: 2.5rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.profile-subtitle-landing {
+  font-size: 1.2rem;
+  color: #6366f1;
+  margin-bottom: 2rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.contact-item-landing {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  background-color: #f7fafc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.contact-icon-landing {
+  font-size: 1.3rem;
+}
+
+.contact-item-landing a {
+  color: #6366f1;
+  font-weight: 600;
+}
+
+.contact-item-landing a:hover {
+  text-decoration: underline;
+}
+
+/* Seções Alternadas */
+.section-alt {
+  padding: 5rem 2rem;
+  background-color: #e5e7eb;
+}
+
+.section-white {
+  padding: 5rem 2rem;
+  background-color: #fff;
+}
+
+.section-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Títulos de Seção */
+.section-title-landing {
+  font-size: 2.5rem;
+  color: #2d3748;
+  margin-bottom: 3rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.title-icon-landing {
+  font-size: 2.5rem;
+}
+
+/* Seção SOBRE */
+.sobre-content {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.sobre-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.subsection-title {
+  font-size: 1.5rem;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #6366f1;
+}
+
+.habilidades-box {
+  margin-bottom: 2.5rem;
+}
+
+.habilidades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.8rem;
+}
+
+.habilidade-tag {
+  padding: 0.8rem 1rem;
+  background-color: #eef2ff;
+  border-left: 4px solid #6366f1;
+  border-radius: 6px;
+  color: #4338ca;
+  font-weight: 500;
+}
+
+.certificacoes-box {
+  margin-top: 2rem;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.cert-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.2rem;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.cert-icon-landing {
+  font-size: 1.8rem;
+}
+
+.cert-card strong {
+  display: block;
+  color: #2d3748;
+  margin-bottom: 0.3rem;
+}
+
+.cert-card p {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* Seção EXPERIÊNCIA ACADÊMICA */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.education-card {
+  background-color: #f9fafb;
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 5px solid #6366f1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.education-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #6366f1;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.date-icon {
+  font-size: 1rem;
+}
+
+.education-title {
+  font-size: 1.6rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.education-institution {
+  color: #6366f1;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.education-desc {
+  color: #4a5568;
+  line-height: 1.7;
+}
+
+/* Seção EXPERIÊNCIA PROFISSIONAL */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.experience-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #6366f1;
+}
+
+.experience-header {
+  margin-bottom: 1rem;
+}
+
+.experience-title {
+  font-size: 1.7rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.experience-company {
+  color: #6366f1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.experience-details {
+  color: #4a5568;
+}
+
+.experience-details strong {
+  display: block;
+  color: #2d3748;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.experience-details ul {
+  list-style-position: inside;
+  padding-left: 1rem;
+}
+
+.experience-details li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Seção PROJETOS */
+.projeto-destaque {
+  background-color: #f9fafb;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.projeto-titulo {
+  font-size: 1.8rem;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.projeto-descricao {
+  color: #4a5568;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tech-badge-landing {
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.tech-badge-landing.react {
+  background-color: #61dafb;
+  color: #000;
+}
+
+.tech-badge-landing.nextjs {
+  background-color: #000;
+}
+
+.tech-badge-landing.tailwind {
+  background-color: #38bdf8;
+}
+
+.tech-badge-landing.js {
+  background-color: #f7df1e;
+  color: #000;
+}
+
+.modulos-info {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #6366f1;
+}
+
+.modulos-info h4 {
+  color: #2d3748;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.modulos-list {
+  list-style-position: inside;
+  color: #4a5568;
+}
+
+.modulos-list li {
+  margin-bottom: 0.7rem;
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer-landing {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 2rem;
+}
+
+.footer-subtitle-landing {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin-top: 0.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+
+  .nav-content {
+    gap: 0.5rem;
+  }
+
+  .nav-link {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .section-home {
+    padding: 5rem 1rem 3rem 1rem;
+  }
+
+  .profile-card-landing {
+    padding: 2rem 1.5rem;
+  }
+
+  .profile-avatar-landing {
+    width: 100px;
+    height: 100px;
+    font-size: 2.5rem;
+  }
+
+  .profile-name-landing {
+    font-size: 1.8rem;
+  }
+
+  .profile-subtitle-landing {
+    font-size: 1rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-alt,
+  .section-white {
+    padding: 3rem 1rem;
+  }
+
+  .section-title-landing {
+    font-size: 1.8rem;
+    flex-direction: column;
+  }
+
+  .sobre-content {
+    padding: 1.5rem;
+  }
+
+  .habilidades-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-card,
+  .experience-card {
+    padding: 1.5rem;
+  }
+
+  .projeto-destaque {
+    padding: 1.5rem;
+  }
+
+  .tech-badges {
+    justify-content: center;
+  }
+}
